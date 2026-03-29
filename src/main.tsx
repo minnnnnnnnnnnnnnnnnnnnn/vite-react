@@ -37,7 +37,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/open" element={ <Open /> } />
             <Route path="/latest" element={ <Latest /> } />
           </Routes>
-          <Back href="" />
+          <Back href="/" />
         </main>
       </BrowserRouter>
       <ToTop />
