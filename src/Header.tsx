@@ -53,7 +53,7 @@ function Header( { q } : { q : String } )
                         <option selected={ false } value="命令">命令</option>
                     </select>
                     <p>
-                        <input tabIndex={ 6 } type="search" placeholder="輸入關鍵字以搜尋" name="q" value={ q.toString() } />
+                        <input tabIndex={ 6 } type="search" placeholder="輸入關鍵字以搜尋" name="q" defaultValue={ q.toString() } />
                         <input tabIndex={ 7 } type="submit" style={ { backgroundImage: "url(\"" + search_w + "\"" , width: "24px" , height: "24px" , backgroundColor: "#0000" , border: "0" , cursor: "pointer" } } value="" alt="搜尋！" />
                     </p>
                 </form>

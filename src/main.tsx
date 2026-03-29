@@ -15,6 +15,7 @@ import ToTop from './ToTop.tsx'
 import Footer from "./Footer.tsx"
 import Back from './Back.tsx'
 import Guide from './Guide.tsx'
+import Laws from './Laws.tsx'
 
 declare module 'react' 
 {
@@ -33,9 +34,10 @@ createRoot(document.getElementById('root')!).render(
         <main className="main">
           <Routes>
             <Route path="/" element={ <Home /> } />
-            <Route path="/print" element={ <Print /> } />
             <Route path="/rel" element={ <Rel /> } />
             <Route path="/open" element={ <Open /> } />
+            <Route path="/laws" element={ <Laws /> } />
+            <Route path="/print" element={ <Print /> } />
             <Route path="/guide" element={ <Guide /> } />
             <Route path="/latest" element={ <Latest /> } />
           </Routes>

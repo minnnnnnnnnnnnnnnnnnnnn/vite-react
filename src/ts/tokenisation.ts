@@ -78,7 +78,11 @@ function tokenise( str : String , b : boolean = false )
   return a ; 
 }
 
-function tokenise_search( a : String ) { return a ; }
+function tokenise_search( a : String ) 
+{
+    if( !a ) { return false ; }
+    return { "b" : false , "v" : a.split( /\s/g ) } ; 
+}
 
 export { tokenise_search } ; 
 export default tokenise ; 

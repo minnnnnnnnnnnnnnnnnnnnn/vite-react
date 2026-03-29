@@ -7,7 +7,7 @@ function Home()
     let content = Array() ; 
     for( let a of latest.sort( ( a , b ) => { return Number( b.No ) - Number( a.No ) ; } ) ) 
     {
-        content.push( <li><a href="/">{ a.Title }</a></li> ) ; 
+        content.push( <li><a href={ `latest?no=${ Number( a.No ) - 1 }` }>{ a.Title }</a></li> ) ; 
     }
     return (
         <>

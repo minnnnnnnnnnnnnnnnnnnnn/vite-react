@@ -6,8 +6,7 @@ function Open()
     return ( 
         <>
             <Bread path={ { "n": "首頁>資料開放宣告" , "v": "/>" } } />
-            {/* <h1 tabIndex={ -1 }>資料開放宣告</h1> */}
-            <h1>資料開放宣告</h1>
+            <h1 tabIndex={ -1 }>資料開放宣告</h1>
             <div className="open">
             <p>一、授權方式及範圍<br/>
 
