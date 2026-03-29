@@ -3,36 +3,37 @@ import "./css/guide.css"
 function Guide() 
 {
     return ( 
-    <>
-        <h1>網站導覽</h1>
-        <div id="guide">
-            <h2>使用說明</h2>
-            <ul>
-                <li>
-                    <h3>搜尋欄</h3>
-                    <span>於法規條文、沿革、名稱、前言（宗旨）及附件檔案名稱中搜尋關鍵字，可以空格分隔多個關鍵字。</span>
-                </li>
-            </ul>
-        </div>
-        <div id="map">
-            <h2>網站地圖</h2>
-            <dl>
-                <dt><a href="laws">法規查詢</a></dt>
-                    <dd><a href="laws?c=c">中央法規</a></dd>
-                    <dd><a href="laws?c=ex">行政法規</a></dd>
-                    <dd><a href="laws?c=l">立法法規</a></dd>
-                    <dd><a href="laws?c=j">司法法規</a></dd>
-                    <dd><a href="laws?c=el">選舉法規（含中央、行政及立法之選舉法規）</a></dd>
-                <dt><a href="cases">判例查詢</a></dt>
-                <dt><a href="parties">政黨查詢</a></dt>
-                <dt><a href="print">法規彙編（列印）</a></dt>
-                <dt><a href="s">統計</a></dt>
-                <dt><a href="rel">相關連結</a></dt>
-                <dt><a href="open">資料開放宣告</a></dt>
-            </dl>
-        </div>
+        <>
+            <h1>網站導覽</h1>
+            <div id="guide">
+                <h2>使用說明</h2>
+                <ul>
+                    <li>
+                        <h3>搜尋欄</h3>
+                        <span>於法規條文、沿革、名稱、前言（宗旨）及附件檔案名稱中搜尋關鍵字，可以空格分隔多個關鍵字。</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="map">
+                <h2>網站地圖</h2>
+                <dl>
+                    <dt><a href="laws">法規查詢</a></dt>
+                        <dd><a href="laws?c=c">中央法規</a></dd>
+                        <dd><a href="laws?c=ex">行政法規</a></dd>
+                        <dd><a href="laws?c=l">立法法規</a></dd>
+                        <dd><a href="laws?c=j">司法法規</a></dd>
+                        <dd><a href="laws?c=el">選舉法規（含中央、行政及立法之選舉法規）</a></dd>
+                    <dt><a href="cases">判例查詢</a></dt>
+                    <dt><a href="parties">政黨查詢</a></dt>
+                    <dt><a href="print">法規彙編（列印）</a></dt>
+                    <dt><a href="s">統計</a></dt>
+                    <dt><a href="rel">相關連結</a></dt>
+                    <dt><a href="open">資料開放宣告</a></dt>
+                </dl>
+            </div>
 
-        <br className="printNoDisplay" /></>
+            <br className="printNoDisplay" />
+        </>
     ) ; 
 }
 
