@@ -7,7 +7,6 @@ function Header( { q } : { q : String } )
 {
     const [ barOrX , toggleMenuBar ] = useState( true ) ; 
     const [ zState , zoom ] = useState( 0 ) ; 
-    let menuBar = "M3 12L21 12M3 6L21 6M3 18L21 18" ; 
     const X = "M3 3L21 21M3 21L21 3" , BAR = "M3 12L21 12M3 6L21 6M3 18L21 18" ; 
     let NavMenuCssClass = () => barOrX ? "collapse" : undefined ; 
     return (
@@ -59,7 +58,7 @@ function Header( { q } : { q : String } )
                     </p>
                 </form>
                 <div tabIndex={ 8 }>
-                    <svg onClick={ () => { toggleMenuBar( () => { menuBar = barOrX ? BAR : X ; return !barOrX ; } ) ; } }xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d={ (() => barOrX ? BAR : X )() } /></svg>
+                    <svg onClick={ () => { toggleMenuBar( () => { return !barOrX ; } ) ; } }xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d={ (() => barOrX ? BAR : X )() } /></svg>
                 </div>
             </div>
             <nav className={ NavMenuCssClass() }>

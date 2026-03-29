@@ -5,10 +5,10 @@ import "./css/law.css"
 import "./css/site.css"
 import Header from "./Header.tsx"
 import Home from './Home.tsx'
-import Print from './Print.tsx'
-import Rel from './Rel.tsx'
-import Open from './Open.tsx'
-import Latest from './Latest.tsx'
+// import Print from './Print.tsx'
+// import Rel from './Rel.tsx'
+// import Open from './Open.tsx'
+// import Latest from './Latest.tsx'
 import ToTop from './ToTop.tsx'
 import Footer from "./Footer.tsx"
 import Back from './Back.tsx'
@@ -27,11 +27,11 @@ createRoot(document.getElementById('root')!).render(
     <div>
       <div id="top"></div>
       <main className="main">
-        {/* <Home /> */}
+        <Home />
         {/* <Print /> */}
         {/* <Rel /> */}
         {/* <Open /> */}
-        <Latest /*a={0}*/ />
+        {/* <Latest a={0} /> */}
         <Back href="" />
       </main>
       <ToTop />
