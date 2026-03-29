@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom";
 import Bread from "./Bread";
 import latest from "./json/latest.json"
 import token_t from "./ts/token_t";
@@ -57,9 +58,11 @@ function gen( i : number )
     return a ; 
 }
 
-function Latest( { a } : { a ?: number } ) 
+function Latest() 
 {
-    if( a !== undefined )
+    let [ p ] = useSearchParams() ; 
+    let a = Number( p.get( "no" ) ) ; 
+    if( a !== null )
     {
         console.assert( a < latest.length && a > -1 , "invalid index of latest.json" ) ; 
         return (

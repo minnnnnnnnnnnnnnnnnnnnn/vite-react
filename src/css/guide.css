@@ -1,0 +1,33 @@
+#guide 
+{
+    border-top : #0005 solid 2px ; 
+}
+#guide , #map 
+{
+    padding-left : 1rem ; 
+}
+#guide ul 
+{
+    padding-left : .5rem ; 
+}
+#guide ul li h3 
+{
+    text-indent : -.5rem ; 
+}
+@media ( max-width : 768px ) 
+{
+    #guide ul 
+    {
+        padding-left : 1rem ; 
+    }
+}
+#map dt 
+{
+    display : block ; 
+    padding-left : 1rem ; 
+}
+#map dd 
+{
+    display : block ; 
+    padding-left : 2rem ; 
+}
