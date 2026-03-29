@@ -1,0 +1,147 @@
+@media print 
+{
+  :root 
+  {
+    font-size : 16px !important ; 
+    zoom : 100% !important ; 
+    line-height : 1 !important ; 
+  }
+  .main 
+  {
+    margin-top : 0 ; 
+    margin-left : 3.5rem ; 
+  }
+}
+
+
+html 
+{
+  font-size : 14px ; 
+  position : relative ; 
+  min-height : 100% ; 
+  font-family : "Noto Sans" , "Sonti TC" , '標點' , "Noto Serif KR" , "Noto Serif TC" , "Noto Serif JP" , "Noto Serif SC" , sans-serif ; 
+  word-break : break-all ; 
+  line-height : 1.3 !important ; 
+}
+@media ( min-width : 768px ) 
+{
+  html 
+  {
+    font-size : 16px ; 
+  }
+}
+::selection 
+{
+  color : var( --selection-color ) ; 
+  background : var( --selection-bg ) ; 
+}
+select 
+{
+  font-family : "Noto Sans" , "Noto Sans TC" , "Noto Sans JP" , "Noto Sans SC" , sans-serif ; 
+}
+::placeholder 
+{
+  font-family : "Noto Sans" , "Noto Sans TC" , "Noto Sans JP" , "Noto Sans SC" , sans-serif ; 
+}
+* 
+{
+  margin : 0 ; 
+  padding : 0 ; 
+  box-sizing : border-box ; 
+}
+ul , ol 
+{
+  list-style-type : none ; 
+}
+a , a:visited 
+{
+  cursor: pointer;
+  color : #057b7b ; 
+  text-decoration : none ; 
+}
+a:hover , a:focus 
+{
+  cursor: pointer;
+  color : #c03 ; 
+  text-decoration : underline ; 
+}
+a:focus 
+{
+  outline : solid #fa8484 ; 
+}
+.Y 
+{
+  background-color : #fc0 !important; 
+}
+/* mian */
+.main 
+{
+  margin : 1rem 3rem ; 
+}
+@media ( min-width : 768px ) 
+{
+  .lawresult 
+  {
+    width : calc(21cm - .8in) ; 
+    margin : 0 auto ; 
+  }
+}
+.lawresult > div:not( .preview ) 
+{
+  color : #000 ; 
+  background : #0002 ; 
+  border-top-right-radius : .5rem ; 
+  border-top-left-radius : .5rem ; 
+  padding-left : .25rem ; 
+  font-weight : 600 ; 
+  font-size : 1.15rem ; 
+}
+.preview 
+{
+  font-family : "Noto Sans" , "Noto Sans TC" , "Noto Sans JP" , "Noto Sans SC" , sans-serif ; 
+  font-size : .8rem ; 
+  background : #0001 ; 
+  color : #333a ; 
+  text-decoration : none ; 
+  border-bottom-right-radius : .5rem ; 
+  border-bottom-left-radius : .5rem ; 
+  margin-bottom : .5rem ; 
+  padding : .5rem .8rem ; 
+}
+.lawresult:hover > div 
+{
+  color : #c03 ; 
+}
+#lawnoresult 
+{
+  color : #f00 ; 
+  text-align : center ; 
+  font-weight : 700 ; 
+  font-size : 5rem ; 
+}
+.lq 
+{
+  height : fit-content ; 
+  width : fit-content ; 
+}
+.lq , .lq + select 
+{
+  display : block ; 
+  margin : 1rem auto ; 
+}
+.lq + select 
+{
+  border : 1px solid #000 ; 
+  border-radius : 1em ; 
+  color : #cdffd0 ; 
+  background : linear-gradient(10deg,#b70000,#276ec4) ; 
+}
+.matched 
+{
+  color : #fc0 ; 
+  background : #0009 ; 
+}
+.matched::selection 
+{
+  background : #f00 ; 
+}

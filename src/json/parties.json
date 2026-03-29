@@ -1,0 +1,163 @@
+[
+    {
+        "UpdateDate": "2025/12/29", 
+        "Parties": [
+            {
+                "Party": 0,
+                "PartyName": "臺中一中學生自治串連黨",
+                "PartyAbbreviation": "串連黨",
+                "Logo": ["0.png"], 
+                "Chairman": "陳宣丞",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "",
+                "PartyRegisteredDate": "",
+                "PartyURL": "https://sites.google.com/view/tcfshcp"
+            },
+            {
+                "Party": 1,
+                "PartyName": "中一中學生維新黨",
+                "PartyAbbreviation": "維新黨",
+                "Logo": ["1.jpg"], 
+                "Chairman": "林昌霖",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "",
+                "PartyRegisteredDate": "",
+                "PartyURL": "https://www.instagram.com/srp_tcfsh/"
+            },
+            {
+                "Party": 2,
+                "PartyName": "台中一中龍黨",
+                "PartyAbbreviation": "龍黨",
+                "Logo": ["2.jpg"], 
+                "Chairman": "許家鵬",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20230918",
+                "PartyRegisteredDate": "20230922",
+                "PartyURL": ""
+            },
+            {
+                "Party": 3,
+                "PartyName": "中一中學習歷程忘記存黨",
+                "PartyAbbreviation": "存黨",
+                "Logo": ["3.jpg"], 
+                "Chairman": "陳致仁",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20240314",
+                "PartyRegisteredDate": "",
+                "PartyURL": "https://www.instagram.com/tcfsh.fsp/"
+            },
+            {
+                "Party": 4,
+                "PartyName": "台中一中圍牆無法黨",
+                "PartyAbbreviation": "圍牆黨",
+                "Logo": ["4.png"], 
+                "Chairman": "尤鯨富",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20241220",
+                "PartyRegisteredDate": "20250120",
+                "PartyURL": "https://www.instagram.com/tcfsh.wall/"
+            },
+            {
+                "Party": 5,
+                "PartyName": "左丞黨",
+                "PartyAbbreviation": "",
+                "Logo": ["5.png"], 
+                "Chairman": "卓祐宸",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250314",
+                "PartyRegisteredDate": "20250319",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+            {
+                "Party": 6,
+                "PartyName": "右丞黨",
+                "PartyAbbreviation": "",
+                "Logo": ["6.png"], 
+                "Chairman": "卓祐宸",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250314",
+                "PartyRegisteredDate": "20250319",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+            {
+                "Party": 7,
+                "PartyName": "（政黨名稱）",
+                "PartyAbbreviation": "",
+                "Logo": ["7.png" , "7.mp3"], 
+                "Chairman": "卓祐宸",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250314",
+                "PartyRegisteredDate": "20250319",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+            {
+                "Party": 8,
+                "PartyName": "PDF不會轉WORD黨",
+                "PartyAbbreviation": "",
+                "Logo": ["8.png"], 
+                "Chairman": "梁宸華",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250314",
+                "PartyRegisteredDate": "20250319",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+            {
+                "Party": 9,
+                "PartyName": "北區交通部",
+                "PartyAbbreviation": "",
+                "Logo": ["9.jpg"], 
+                "Chairman": "陳宣丞",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250314",
+                "PartyRegisteredDate": "20250319",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+            {
+                "Party": 10,
+                "PartyName": "一二三（四五）星球帝國創世宇宙戰爭黨",
+                "PartyAbbreviation": "一二三",
+                "Logo": ["10.jpg"], 
+                "Chairman": "林祐慶",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250314",
+                "PartyRegisteredDate": "20250319",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+            {
+                "Party": 11,
+                "PartyName": "臺中一中學生未入黨",
+                "PartyAbbreviation": "未入黨",
+                "Logo": ["11.svg"], 
+                "Chairman": "李牧澄",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20250917",
+                "PartyRegisteredDate": "20250930",
+                "PartyURL": "https://tcfsh.me/"
+            },
+            {
+                "Party": 12,
+                "PartyName": "淤泥鏟子可以黨",
+                "PartyAbbreviation": "阮朝",
+                "Logo": ["12.png"], 
+                "Chairman": "阮宥翔",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20251015",
+                "PartyRegisteredDate": "20251026",
+                "PartyURL": "https://left-right-chancellor.github.io/"
+            },
+             {
+                "Party": 13,
+                "PartyName": "臺中一中共創黨",
+                "PartyAbbreviation": "共創黨",
+                "Logo": ["13.png"], 
+                "Chairman": "黃治博",
+                "PartyState": "一般",
+                "PartyEstablishedDate": "20251117",
+                "PartyRegisteredDate": "20251216",
+                "PartyURL": "https://www.instagram.com/tcfsh_pcc/"
+            }
+        ]
+    }
+]
+
+

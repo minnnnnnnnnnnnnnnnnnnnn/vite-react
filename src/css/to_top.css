@@ -1,0 +1,39 @@
+
+.toTop 
+{
+  border-radius : 50% ; 
+  font-size : 1.15rem ; 
+  width : 2.85em ; 
+  height : 2.85em ; 
+  display : flex ; 
+  flex-direction : column ; 
+  justify-content : center ; 
+  align-content : center ; 
+  justify-content : center ; 
+  align-items : center ; 
+  background : #0005 ; 
+  color : #fff ; 
+  position : fixed ; 
+  bottom : 20px ; 
+  right : 10px ; 
+  cursor : pointer ; 
+  user-select : none ; 
+}
+.toTop:hover  
+{
+  background : #0007 ; 
+  zoom : 102.5% ; 
+}
+.toTop:focus 
+{
+  outline : 1px solid #fc0 ; 
+  zoom : 105% ; 
+  background : #0009 ; 
+}
+@media print 
+{
+  .toTop , #top 
+  {
+    display : none ; 
+  }
+}

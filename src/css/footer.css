@@ -1,0 +1,85 @@
+footer 
+{
+  margin : 1rem ; 
+  margin-bottom : 0 ; 
+  font-family : "Noto Serif" , "Songti TC" , '標點' , "Noto Serif KR" , "Noto Serif TC" , "Noto Serif JP" , "Noto Serif SC" , sans-serif ; 
+}
+footer ::selection 
+{
+  color : #fc0 ; 
+  background : #000 ; 
+}
+.footer-upper 
+{
+  padding : .5rem 0 ; 
+  margin : 0 1rem ; 
+  margin-bottom : 1rem ; 
+  border-bottom : 1px solid #000 ; 
+}
+.footer-upper ul 
+{
+  display : flex ; 
+  justify-content : flex-start ; 
+  align-items : center ; 
+  flex-wrap : wrap ; 
+}
+@media ( min-width : 768px ) 
+{
+  .footer-upper ul 
+  {
+    justify-content : space-around ; 
+  }
+}
+.footer-upper ul li 
+{
+  margin : .5em 1em ; 
+}
+.footer-note a , .footer-note a:visited 
+{
+  color : #000 ; 
+  text-decoration : underline ; 
+}
+footer > .footer-note 
+{
+  margin-left : 1rem ; 
+  color : #084141 ; 
+}
+footer > .footer-note ul li 
+{
+  list-style-type : disc ; 
+}
+.footer-bottom 
+{
+  background : #f2f2f2 ; 
+  margin : 0 -1rem ; 
+  line-height : 1.5 ; 
+}
+.footer-bottom > span , .footer-bottom > ul , .footer-bottom > span > ul > li 
+{
+  margin : 1rem ; 
+  margin-bottom : 0 ; 
+}
+.footer-bottom > span > ul > li::before 
+{
+  content : '>' ; 
+} 
+.footer-bottom a , .footer-bottom a:visited , .footer-upper a , .footer-upper a:visited 
+{
+  color : #000 ; 
+}
+.footer-bottom a:hover , .footer-bottom a:focus , .footer-upper a:hover , .footer-upper a:focus 
+{
+  color : #c03 ; 
+  text-decoration : underline ; 
+}
+.footer-bottom > ul 
+{
+  display : flex ; 
+  align-items : center ; 
+  border-left : solid 1px #000 ; 
+}
+.footer-bottom > ul li 
+{
+  border-right : solid 1px #000 ; 
+  padding : 0 1rem ; 
+}

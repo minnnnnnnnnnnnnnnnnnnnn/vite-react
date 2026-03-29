@@ -1,0 +1,249 @@
+header 
+{
+  background : var(--header-bg) ; 
+  font-family : "Noto Serif" , "Songti TC" , '標點' , "Noto Serif KR" , "Noto Serif TC" , "Noto Serif JP" , "Noto Serif SC" , sans-serif ; 
+}
+header ::selection 
+{
+  color : #7fffd4 ; 
+  background : #000 ; 
+}
+header .top-guide 
+{
+  background : var(--header-top-bg) ; 
+  color : #fff ; 
+}
+header .top-guide ul 
+{
+  display : flex ; 
+  justify-content : flex-end ; 
+  align-items : center ; 
+  margin : 0 1rem ; 
+}
+header .top-guide ul li:nth-child( 2 ) 
+{
+  box-sizing : content-box ; 
+  width : 5em ; 
+  display : flex ; 
+  justify-content : space-evenly ; 
+  align-items : center ; 
+}
+header .top-guide ul li span , header .top-guide ul li span:hover , header .top-guide ul li span:focus 
+{
+  text-align : center ; 
+  line-height : 1.35rem ; 
+  width : 1.35rem ; 
+  height : 1.35rem ; 
+  background : #fff ; 
+  color : #000 ; 
+  cursor : pointer ; 
+  -webkit-user-select : none ; 
+  -ms-user-select : none ; 
+  user-select : none; 
+}
+header .top-guide ul li:not( header .top-guide ul li:has( .toggleD ) ) 
+{
+  padding : .15rem 1rem ; 
+}
+header .top-guide ul li:not( :last-child ) 
+{
+  border-right : 1px solid #fff ; 
+}
+header .top-guide ul li .toggleD 
+{
+  width : 4rem ; 
+}
+header .top-guide ul li .toggleD svg 
+{
+  width : calc(2rem - 2px) ; 
+}
+header .top 
+{
+  margin : .5rem 1rem ; 
+  display : flex ; 
+  align-items : center ; 
+  justify-content : space-evenly ; 
+}
+header .top #lqc 
+{
+    color : var( --header-bg ) ; 
+    background: linear-gradient(20deg, #fae0f7, #bd0f83);
+    border : 0 ; 
+    border-radius : 8.5px ; 
+}
+header .top label[for="lqc"] 
+{
+    display : none ; 
+    color : #fffad0 ; 
+}
+header .top #lql , header .top label[for="lql"] 
+{
+    color : #ffc8d2 ; 
+    display : none ; 
+}
+header .top #lql 
+{
+    background: linear-gradient(20deg, #001d12, #a165fa);
+    border : 0 ; 
+    border-radius : 8.5px ; 
+}
+header .top label[for="lql"] , header .top label[for="lqc"] 
+{
+    font-size : .8rem ; 
+    flex-shrink : 0 ; 
+}
+@media ( min-width : 768px ) 
+{
+    header .top #lql , header .top label[for="lql"] , header .top label[for="lqc"] 
+    {
+        display : inline-block ; 
+    }
+}
+header .top a img 
+{
+  height : 3rem ; 
+  -webkit-user-select : none ; 
+  -ms-user-select : none ; 
+  user-select : none; 
+}
+header .top form 
+{
+  width : 60% ; 
+  height : 2rem ; 
+  display : flex ; 
+  justify-content : center ; 
+  align-items : center ; 
+}
+header .top form select 
+{
+  width : 5em ; 
+  font-size : 10pt ; 
+  flex-shrink : 0 ; 
+}
+header .top form select:focus 
+{
+  outline : #fc0 solid 1px ; 
+}
+header .top form p 
+{
+  width : 100% ; 
+}
+header .top form input:first-child 
+{
+  width : 70% ; 
+  height : 2rem ; 
+  border-radius : 1rem ; 
+  border : 0 ; 
+  outline : 0 ; 
+}
+header .top form input:first-child::placeholder 
+{
+  font-family : "Noto Sans TC" ; 
+  font-weight : 500 ; 
+  opacity : .65 ; 
+  text-indent : .5rem ; 
+}
+header .top > :last-child 
+{
+  cursor : pointer ; 
+  border-radius : 50% ; 
+  display : block ; 
+  width : 3rem ; 
+  height : 3rem ; 
+  position : relative ; 
+  background : transparent ; 
+  color : #fff ; 
+}
+header .top > :last-child:hover 
+{
+  color : #000 ; 
+}
+header .top > :last-child:focus 
+{
+  color : #fc0 ; 
+}
+header .top > :last-child svg 
+{
+  width : calc(3rem * .8) ; 
+  height : calc(3rem * .8) ; 
+  position : absolute ; 
+  top : .3rem ; 
+  left : .3rem ; 
+}
+.collapse 
+{
+  display : none ; 
+}
+@media ( min-width : 768px ) 
+{
+  header .top > :last-child 
+  {
+    display : none ; 
+  }
+  .collapse 
+  {
+    display : block ; 
+  }
+}
+header nav 
+{
+  margin : .5rem 1rem ; 
+}
+header nav ul 
+{
+  display : flex ; 
+  justify-content : space-evenly ; 
+  align-items : flex-start ; 
+  flex-direction : column ; 
+}
+header nav ul li 
+{
+  font-size : 16px ; 
+  width : 100% ; 
+  border-top : #fffe 1px solid ; 
+  padding : .5rem 1rem ; 
+  text-align : center ; 
+  letter-spacing : 1em ; 
+}
+@media ( min-width : 768px ) 
+{
+  header nav 
+  {
+    padding : .5rem 0 ; 
+    margin : 0 1rem ; 
+    border-top : 1px var(--header-hr) solid ; 
+  }
+  header nav ul 
+  {
+    justify-content : space-evenly ; 
+    align-items : center ; 
+    flex-direction : row ; 
+  }
+  header nav ul li , li:not( div[ahhhhaaaahaha] li ):not( .footer-bottom li ):not( .bread li ) 
+  {
+    margin : 0 1rem ; 
+  }
+  header nav ul li 
+  {
+    font-size : 16px ; 
+    width : 100% ; 
+    border-top : 0 ; 
+    padding : 0 ; 
+    text-align : center ; 
+    letter-spacing : 0 ; 
+  }
+}
+header a , header a:visited 
+{
+  color : var(--header-a) ; 
+}
+header a:hover 
+{
+  color : var(--header-a-hover) ; 
+  text-decoration : none ; 
+}
+header a:focus 
+{
+  color : var(--header-a-focus) ; 
+  text-decoration : none ; 
+}
