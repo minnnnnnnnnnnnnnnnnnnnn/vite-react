@@ -1,17 +1,5 @@
 
-function includes( a : 
-    { 
-        "LawName" : string , 
-        "LawForeword" : string , 
-        "LawAttachments" : {
-            "FileName" : string 
-        }[] , 
-        "LawArticles" : {
-            "ArticleType" : string , 
-            "ArticleNo" : string , 
-            "ArticleContent" : string 
-        }[]
-    } , qq : string[] ) 
+function includes( a : { "LawName" : string , "LawForeword" : string , "LawAttachments" : { "FileName" : string }[] , "LawArticles" : { "ArticleType" : string , "ArticleNo" : string , "ArticleContent" : string }[] } , qq : string[] ) 
 {
     for( let q of qq ) 
     {

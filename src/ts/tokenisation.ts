@@ -78,7 +78,7 @@ function tokenise( str : String , b : boolean = false )
   return a ; 
 }
 
-function tokenise_search( a : String ) 
+function tokenise_search( a : string | null ) 
 {
     if( !a ) { return false ; }
     return { "b" : false , "v" : a.split( /\s/g ) } ; 
