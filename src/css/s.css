@@ -1,0 +1,13 @@
+
+.statistics_table 
+{
+    border : 1px #000 solid ; 
+}
+.statistics_table tr 
+{
+    border-bottom : 1px #000 solid ; 
+}
+.statistics_table th , .statistics_table td 
+{
+    border-right : 1px #000 solid ; 
+}

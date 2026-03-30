@@ -3,6 +3,7 @@ import Bread from "./Bread";
 import latest from "./json/latest.json"
 import token_t from "./ts/token_t";
 import tokenise from "./ts/tokenisation";
+import Back from "./Back";
 
 function gen( i : number ) 
 {
@@ -71,6 +72,7 @@ function Latest()
                 <dl className="la">
                     { gen( a ) } 
                 </dl>
+                <Back href="/" b={ true } />
             </>
         ) ; 
     }
@@ -84,7 +86,7 @@ function Latest()
             temp.push( gen( i ) ) ; 
         }
         content.push( <dl className="la">{ temp }</dl> ) ; 
-        return <>{ content }</> ; 
+        return <>{ content }<Back href="/" b={ true }/></> ; 
     }
 }
 

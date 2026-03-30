@@ -1,3 +1,4 @@
+import Back from "./Back";
 import Bread from "./Bread"
 import "./css/p.css"
 
@@ -512,6 +513,7 @@ function Rel()
                     </div>
                 </div>
             </div>
+            <Back href="/" b={ true }/>
         </>
     ) ; 
 }

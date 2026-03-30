@@ -1,3 +1,4 @@
+import Back from "./Back";
 import "./css/guide.css"
 
 function Guide() 
@@ -33,6 +34,7 @@ function Guide()
             </div>
 
             <br className="printNoDisplay" />
+            <Back href="/" b={ true }/>
         </>
     ) ; 
 }
