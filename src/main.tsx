@@ -17,6 +17,7 @@ import Guide from './Guide.tsx'
 import Laws from './Laws.tsx'
 import S from './S.tsx'
 import Parties from './Parties.tsx'
+import PartyDetail from './PartyDetail.tsx'
 
 declare module 'react' 
 {
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/guide" element={ <Guide /> } />
             <Route path="/latest" element={ <Latest /> } />
             <Route path="/parties" element={ <Parties /> } />
+            <Route path="/parties/detail" element={ <PartyDetail /> } />
           </Routes>
         </main>
       </BrowserRouter>

@@ -8,10 +8,12 @@ import "./css/fonts.css"
 import "./css/color.css"
 import "./css/site.css"
 import "./css/darkmode.css"
+import { useEffect } from "react"
 
 
 function Print() 
 {
+  useEffect( () => { document.title = "法規彙編" ; } ) ; 
   const 發行人 = "黃宣方" , 編輯 = [ "黃宣方" , "卓祐宸" , "陳寬澂" , "王宸翼" ] ; 
   const c = "ABCD" , cat = [ "中央法規" , "行政法規" , "立法法規" , "司法法規" ] ; 
   let content = Array() ; 

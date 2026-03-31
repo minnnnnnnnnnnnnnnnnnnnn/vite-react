@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import "./css/s.css"
 import s_csv from "./csv/s_csv.ts"
 import s_csv_c from "./csv/s_csv_c.ts"
 
 function S() 
 {
+    useEffect( () => { document.title = "統計" ; } ) ; 
     return ( 
         <>
             <h1>統計</h1>

@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import Back from "./Back";
 import "./css/guide.css"
 
 function Guide() 
 {
+    useEffect( () => { document.title = "網站導覽" ; } ) ; 
     return ( 
         <>
             <h1>網站導覽</h1>

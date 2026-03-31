@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import Back from "./Back";
 import Bread from "./Bread";
 import "./css/home.css"
 
 function Open() 
 {
+    useEffect( () => { document.title = "資料開放宣告" ; } ) ; 
     return ( 
         <>
             <Bread path={ { "n": "首頁>資料開放宣告" , "v": "/>" } } />

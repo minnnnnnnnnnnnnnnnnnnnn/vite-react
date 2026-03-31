@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import Bread from "./Bread";
 import latest from "./json/latest.json"
@@ -61,6 +62,7 @@ function gen( i : number )
 
 function Latest() 
 {
+    useEffect( () => { document.title = "最新消息" ; } ) ; 
     let [ p ] = useSearchParams() ; 
     let a = Number( p.get( "no" ) ) ; 
     if( a !== null )

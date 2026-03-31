@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { tokenise_search } from "./ts/tokenisation";
 import laws from "./json/laws.json"
@@ -8,6 +8,7 @@ import Back from "./Back";
 
 function Laws() 
 {
+    useEffect( () => { document.title = "法規查詢" ; } ) ; 
     const [ a ] = useSearchParams() ; 
     let q = tokenise_search( a.get( "q" ) ) , c = a.get( "c" ) , l = a.get( "l" ) , ab = a.get( "ab" ); 
     let lq = laws[0].Laws.sort( sort_cat ).filter( l => !c || ( c.toUpperCase() == "EL" ? l.LawCategory.includes( "選舉法規" ) : ( c.toUpperCase() == "C" ? ( !l.LawCategory.includes( "選舉法規" ) && l.LawCategory.includes( "中央法規" ) ) : ( c.toUpperCase() == "EX" ? ( !l.LawCategory.includes( "選舉法規" ) && l.LawCategory.includes( "行政法規" ) ) : ( c.toUpperCase() == "L" ? ( !l.LawCategory.includes( "選舉法規" ) && l.LawCategory.includes( "立法法規" ) ) : ( c.toUpperCase() != "J" || ( !l.LawCategory.includes( "選舉法規" ) && l.LawCategory.includes( "司法法規" ) )  ) ) ) ) ) ) ; 

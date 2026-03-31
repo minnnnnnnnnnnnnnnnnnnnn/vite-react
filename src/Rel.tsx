@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import Back from "./Back";
 import Bread from "./Bread"
 import "./css/p.css"
 
 function Rel() 
 {
+    useEffect( () => { document.title = "相關連結" ; } ) ; 
     return (
         <>
             <Bread path={ { "n": "首頁>相關連結" , "v": "/>" } } />
