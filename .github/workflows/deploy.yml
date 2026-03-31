@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 10.0.x
-      - run: /usr/bin/ls -la src
+      - run: /usr/bin/mkdir src/csv
       - name: Calculate statistics
         run: dotnet run --project 'src/cs'
       - name: Setup bun
