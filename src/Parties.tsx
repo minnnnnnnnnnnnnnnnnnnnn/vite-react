@@ -1,5 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import Back from "./Back";
+import search from "./i/icon/search.svg"
 import parties from "./json/parties.json"
 
 function Parties() 
@@ -18,7 +19,7 @@ function Parties()
                 </select>
                 <p>
                     <input type="search" placeholder="輸入關鍵字以搜尋政黨" name="q" value={ q ? q : "" } />
-                    <input type="submit" style={ { backgroundImage : "url(i/icon/search.svg)" , width : "24px" , height : "24px" , backgroundColor : "#0000" , border : "0" , cursor : "pointer" } } value="" alt="搜尋！" />
+                    <input type="submit" style={ { backgroundImage : search , width : "24px" , height : "24px" , backgroundColor : "#0000" , border : "0" , cursor : "pointer" } } value="" alt="搜尋！" />
                 </p>
             </form>
             <table className="p">
