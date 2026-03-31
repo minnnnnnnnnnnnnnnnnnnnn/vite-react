@@ -34,7 +34,7 @@ function Header( { q } : { q : String } )
                 </ul>
             </div>
             <div className="top">
-                <a tabIndex={ 4 } className="" href="/"><img src={ logo } alt="首頁" /></a>
+                <a tabIndex={ 4 } className="" href=""><img src={ logo } alt="首頁" /></a>
                 <form action="laws" method="get">
                     <label htmlFor="lqc">類別：</label>
                     <select tabIndex={ 5 } name="c" id="lqc">
