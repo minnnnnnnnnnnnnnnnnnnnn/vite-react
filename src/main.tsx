@@ -15,7 +15,7 @@ import ToTop from './ToTop.tsx'
 import Footer from "./Footer.tsx"
 import Guide from './Guide.tsx'
 import Laws from './Laws.tsx'
-import S from './S.tsx'
+import S from './S.jsx'
 import Parties from './Parties.tsx'
 
 declare module 'react' 

@@ -1,13 +1,12 @@
 import "./css/s.css"
 import laws from "./json/laws.json"
 import cases from "./json/cases.json"
+import exactMath from "exact-math"
 
 function S() 
 {
     let r = [ { "A" : "你" , "C" : 1 } ] , rc = [ { "A" : "𐀀" , "C" : 0 } ] ; 
-    let l = Array.from( laws[0].Laws.toString().replace( /[!-⬍⿰-㏿ﬓ-�\s]/g , "" ) ) ; 
-    let c = cases[0].Cases ; 
-    console.log( c ) ; 
+    let l = laws[0].Laws.map( l => l.LawName + l.LawHistories + l.LawAttachments.map( ll => ll.FileName ) + l.LawArticles.map( ll => ll.ArticleContent + ll.ArticleNo ) ).join( "" ).replace( /[!-⬍⿰-㏿ﬓ-�\s]/g , "" ) ; 
     let wc = l.length ; 
     return ( 
         <>
@@ -29,7 +28,7 @@ function S()
                                 <td>{ x.A }</td>
                                 <td style={ { minWidth : "calc(6em + 2px)" } }>{ "U+" + x.A.charCodeAt( 0 ).toString( 16 ) }</td>
                                 <td>{ x.C }</td>
-                                <td>{ ( x.C * 1000 ) / wc }</td>
+                                <td>{ exactMath.div( exactMath.mul( x.C , 1000 ) , wc , { returnString : false , maxDecimal : 15 } ) }</td>
                             </tr>
                         ) 
                     }
