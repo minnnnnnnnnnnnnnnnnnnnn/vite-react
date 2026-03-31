@@ -4,7 +4,6 @@ on:
   push:
     branches: ['main']
 
-  # 这个选项可以使你手动在 Action tab 页面触发工作流
   workflow_dispatch:
 
 permissions:
@@ -25,11 +24,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      # - name: Set up Node
-      #   uses: actions/setup-node@v6
-      #   with:
-      #     node-version: lts/*
-      #     cache: 'npm'
+      - run: cd src/cs
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+      - name: Calculate statistics
+        run: dotnet run
+      - run: cd ../../
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
         with:

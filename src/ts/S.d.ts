@@ -1,1 +1,0 @@
-export declare function S() : JSX.Element ; 
