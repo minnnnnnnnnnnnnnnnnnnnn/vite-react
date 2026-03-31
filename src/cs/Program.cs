@@ -78,7 +78,7 @@ partial class Program
                     break;
                 }
             }
-            using StreamWriter sw = File.CreateText("../csv/s_csv.ts");
+            using StreamWriter sw = File.CreateText("./src/csv/s_csv.ts");
             {
                 sw.Write( "export default \"" );
                 string temp = "";
@@ -90,7 +90,7 @@ partial class Program
                 }
                 sw.Write( temp[..^1] + "\"" ) ; 
             }
-            using StreamWriter swc = File.CreateText("../csv/s_csv_c.ts");
+            using StreamWriter swc = File.CreateText("./src/csv/s_csv_c.ts");
             {
                 swc.Write( "export default \"" );
                 string temp = ""; 
