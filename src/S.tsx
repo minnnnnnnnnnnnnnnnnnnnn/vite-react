@@ -6,6 +6,8 @@ function S()
 {
     let r = [ { "A" : "你" , "C" : 1 } ] , rc = [ { "A" : "𐀀" , "C" : 0 } ] ; 
     let l = Array.from( laws[0].Laws.toString().replace( /[!-⬍⿰-㏿ﬓ-�\s]/g , "" ) ) ; 
+    let c = cases[0].Cases ; 
+    console.log( c ) ; 
     let wc = l.length ; 
     return ( 
         <>
