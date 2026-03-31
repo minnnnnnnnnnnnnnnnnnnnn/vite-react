@@ -19,7 +19,7 @@ function Bread( { path } : { path : { n : String , v : String } } )
         let i = 0 ; 
         for(; i < aa.length - 1 ; ++ i ) 
         {
-            li.push( <li key={ i }><a href={ va[i] }>{ aa[i] }</a></li> ) ; 
+            li.push( <li key={ i }><a href={ va[i] == "/" ? "" : va[i] }>{ aa[i] }</a></li> ) ; 
         }
         li.push( <li key={ i + 1 }>{ aa.at( -1 ) }</li> ) ; 
     }
