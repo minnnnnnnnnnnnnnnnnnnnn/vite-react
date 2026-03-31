@@ -16,8 +16,8 @@ function PartyDetail()
                     {
                         (p.Logo.length == 2) ? 
                         <>
-                            <audio className="printNoDisplay" controls src={ "A/parties/" + p.Logo[1] }></audio>
-                            <a className="onlyPrint" href={ "A/parties/" + p.Logo[1] }>https://tcfshsu.github.io/law/a/parties/{ p.Logo[1] }</a>
+                            <audio className="printNoDisplay" controls src={ "a/parties/" + p.Logo[1] }></audio>
+                            <a className="onlyPrint" href={ "a/parties/" + p.Logo[1] }>https://tcfshsu.github.io/law/a/parties/{ p.Logo[1] }</a>
                         </>
                         : <></>
                     }
