@@ -17,7 +17,7 @@ function Print()
   const 發行人 = "黃宣方" , 編輯 = [ "黃宣方" , "卓祐宸" , "陳寬澂" , "王宸翼" ] ; 
   const c = "ABCD" , cat = [ "中央法規" , "行政法規" , "立法法規" , "司法法規" ] ; 
   let content = Array() ; 
-  let t_content = Array() , t = [] ; 
+  let t_content = Array() , t_content_ = Array() , t = [] , t_ = [] ; 
   let i = 0 , ci = 0 ; 
   let sorted_l = laws[0].Laws.sort( sort_cat ) ; 
   content.push( <span className="break"><div style={ { display: "inline" } }>中央法規</div></span> ) ; 
@@ -35,15 +35,19 @@ function Print()
     l.push( <LawContent a={ i } /> ) ; 
     content.push( <div id={ i.toString() }>{ l }</div> ) ; 
     t.push( <a href={ "#" + i.toString() }><span className="abandoned">{ a.LawAbandonNote }</span>{ a.LawName }</a>) ; 
+    t_.push( <a href={ "print/#" + i.toString() }><span className="abandoned">{ a.LawAbandonNote }</span>{ a.LawName }</a>) ; 
     if( i == sorted_l.length - 1 ) 
     {
       t_content.push( <div id="E"><h1>選舉法規</h1>{ t }</div> ) ; 
+      t_content_.push( <div id="E"><h1>選舉法規</h1>{ t_ }</div> ) ; 
     }
     else if( !sorted_l[i].LawCategory.includes( '/' ) && sorted_l[i].LawCategory.replace( "廢止法規 > " , "" ) != sorted_l[ i + 1 ].LawCategory.replace( "廢止法規 > " , "" ) )
     {
       t_content.push( <div id={ c[ci] }><h1>{ cat[ci] }</h1>{ t }</div> ) ; 
+      t_content_.push( <div id={ c[ci] }><h1>{ cat[ci] }</h1>{ t_ }</div> ) ; 
       content.push( <span className="break"><div style={ { display: "inline" } }>{ cat[++ci] }</div></span> ) ; 
       t = [] ; 
+      t_ = [] ; 
     }
     ++ i ; 
   }
@@ -65,7 +69,7 @@ function Print()
         </span>
         <span className="forView">
           <span className="title">目錄</span>
-          { t_content }
+          { t_content_ }
         </span>
         { content }
         <span id="COVER-BACK" style={ { lineHeight: "1.3" } }>
