@@ -44,7 +44,7 @@ jobs:
       - name: add fonts 
         run: cp -r ./src/fonts ./dist/fonts
       - name: add attachments & party logos 
-        run: cp -r ./src/A ./dist/A;cp -r ./src/i/parties ./dist/i/parties
+        run: cp -r ./src/A ./dist/A;mkdir ./dist/i/parties;cp -r ./src/i/parties ./dist/i/parties
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
