@@ -500,7 +500,7 @@ function Rel()
                     <div className="lawall">
                         <h2>法規彙編下載</h2>
                         <ul>
-                            <li><a>本網站（列印）</a></li>
+                            <li><a href="print">本網站（列印）</a></li>
                             <li>
                                 <a target="_blank" href="https://sites.google.com/view/tcfshsu/%E8%A9%95%E8%AD%B0%E5%A7%94%E5%93%A1%E6%9C%83/%E8%A9%95%E8%AD%B0%E5%A7%94%E5%93%A1%E6%9C%83%E8%B3%87%E8%A8%8A%E5%85%AC%E9%96%8B%E8%99%95#h.1nevsowitfq">評議委員會
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
