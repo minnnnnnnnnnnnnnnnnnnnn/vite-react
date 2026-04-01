@@ -18,6 +18,8 @@ import Laws from './Laws.tsx'
 import S from './S.tsx'
 import Parties from './Parties.tsx'
 import PartyDetail from './PartyDetail.tsx'
+import Cases from './Cases.tsx'
+import CasesDetail from './CasesDetail.tsx'
 
 declare module 'react' 
 {
@@ -45,6 +47,8 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/latest" element={ <Latest /> } />
             <Route path="/parties" element={ <Parties /> } />
             <Route path="/parties/detail" element={ <PartyDetail /> } />
+            <Route path="/cases" element={ <Cases /> } />
+            <Route path="/cases/detail" element={ <CasesDetail /> } />
           </Routes>
         </main>
       </BrowserRouter>
