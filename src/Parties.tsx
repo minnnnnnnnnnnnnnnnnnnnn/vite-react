@@ -34,8 +34,8 @@ function Parties()
                     { 
                         parties[0].Parties.map( p => 
                             <tr>
-                                <td><a href={ `detail?party=${ p.Party }&q=${ q ? q : "" }&s=${ s ? s : "" }` }>{ p.Party }</a></td>
-                                <td><a href={ `detail?party=${ p.Party }&q=${ q ? q : "" }&s=${ s ? s : "" }` }>{ p.PartyName }</a></td>
+                                <td><a href={ `parties/detail?party=${ p.Party }&q=${ q ? q : "" }&s=${ s ? s : "" }` }>{ p.Party }</a></td>
+                                <td><a href={ `parties/detail?party=${ p.Party }&q=${ q ? q : "" }&s=${ s ? s : "" }` }>{ p.PartyName }</a></td>
                                 <td>{ p.Chairman }</td>
                             </tr>
                         ) 

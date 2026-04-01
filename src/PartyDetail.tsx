@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import parties from "./json/parties.json"
+import Back from "./Back";
 
 function PartyDetail() 
 {
@@ -71,6 +72,7 @@ function PartyDetail()
                     </dl>
                 </div>
             </div>
+            <Back href="parties"/>
         </>
     ) ; 
 }
