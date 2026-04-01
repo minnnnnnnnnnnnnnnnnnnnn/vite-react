@@ -59,19 +59,19 @@ function sort_date_rev( a : any , b : any )
 }
 function sort_long( a : any , b : any ) 
 {
-  return a.LawName.length - b.LawName.length ; 
+  return b.LawName.length - a.LawName.length ; 
 }
 function sort_short( a : any , b : any ) 
 {
-  return b.LawName.length - a.LawName.length ; 
+  return a.LawName.length - b.LawName.length ; 
 }
 function sort_long_pure( a : any , b : any ) 
 {
-  return a.LawName.replace( "臺中市立臺中第一高級中等學校學生自治聯合會", "" ).replace("臺中第一高級中學", "").length - b.LawName.replace("臺中市立臺中第一高級中等學校學生自治聯合會", "").replace("臺中第一高級中學", "").length ; 
+  return b.LawName.replace( "臺中市立臺中第一高級中等學校學生自治聯合會", "" ).replace("臺中第一高級中學", "").length - a.LawName.replace("臺中市立臺中第一高級中等學校學生自治聯合會", "").replace("臺中第一高級中學", "").length ; 
 }
 function sort_short_pure( a : any , b : any ) 
 {
-  return b.LawName.replace( "臺中市立臺中第一高級中等學校學生自治聯合會", "" ).replace("臺中第一高級中學", "").length - a.LawName.replace("臺中市立臺中第一高級中等學校學生自治聯合會", "").replace("臺中第一高級中學", "").length ; 
+  return a.LawName.replace( "臺中市立臺中第一高級中等學校學生自治聯合會", "" ).replace("臺中第一高級中學", "").length - b.LawName.replace("臺中市立臺中第一高級中等學校學生自治聯合會", "").replace("臺中第一高級中學", "").length ; 
 }
 function sort_a_to_z( a : any , b : any ) 
 {

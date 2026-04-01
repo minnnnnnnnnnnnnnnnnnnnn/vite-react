@@ -26,10 +26,13 @@ function Laws()
         {}
         else 
         {
-            lq = lq.filter( l => includes( l , q.v ) ) ; 
+            let out = { i : 0 , val : [] as { n : string[] , prev : string[] }[] } ; 
+            lq = lq.filter( l => includes( l , q.v , out ) ) ; 
+            console.log( out.val.map( v => v.n + ' ' + v.prev ) ) ; 
         }
     }
-    const [ s , so ] = useState( lq ) , lq_def = lq ; 
+    const [ s , so ] = useState( lq ) , lq_def = [...lq] ; 
+    const [ state , update_state ] = useState( 0 ) ; 
     return ( 
         <><select onChange={ e => { so( () => { 
             switch( e.target.value ) 
@@ -47,8 +50,8 @@ function Laws()
                 case "" : return lq_def ; 
                 default : return lq ; 
             } 
-        } ) } }><option value="">預設</option><option value="latest">最後異動日期（新 &gt; 舊）</option><option value="oldest">最後異動日期（舊 &gt; 新）</option><option value="long">全名長度（長 &gt; 短）</option><option value="short">全名長度（短 &gt; 長）</option><option value="longPure">名稱長度（長 &gt; 短）</option><option value="shortPure">名稱長度（短 &gt; 長）</option><option value="AtoZ">筆劃（少 &gt; 多）</option><option value="ZtoA">筆劃（多 &gt; 少）</option><option value="CtoO">位階（高 &gt; 低）</option><option value="OtoC">位階（低 &gt; 高）</option></select>
-        { s.map( law => <a className="lawresult" href={ law.LawURL + `&c=${c?c:""}&q=${a.get( "q" )?a.get( "q" ):""}&l=${l?l:""}&ab=${ab?ab:""}` } key={ law.LawURL }><div>{ law.LawAbandonNote + law.LawName }</div><div className="preview">{ law.LawArticles[0].ArticleContent }</div></a> ) }<Back href="/" b={ true }/></>
+        } ) ; console.log( lq_def[0] ) ; update_state( () => Math.random() ) ; } }><option value="">預設</option><option value="latest">最後異動日期（新 &gt; 舊）</option><option value="oldest">最後異動日期（舊 &gt; 新）</option><option value="long">全名長度（長 &gt; 短）</option><option value="short">全名長度（短 &gt; 長）</option><option value="longPure">名稱長度（長 &gt; 短）</option><option value="shortPure">名稱長度（短 &gt; 長）</option><option value="AtoZ">筆劃（少 &gt; 多）</option><option value="ZtoA">筆劃（多 &gt; 少）</option><option value="CtoO">位階（高 &gt; 低）</option><option value="OtoC">位階（低 &gt; 高）</option></select>
+        { s.map( law => <a data-state-trigger={ state } className="lawresult" href={ law.LawURL + `&c=${c?c:""}&q=${a.get( "q" )?a.get( "q" ):""}&l=${l?l:""}&ab=${ab?ab:""}` } key={ law.LawURL }><div>{ law.LawAbandonNote + law.LawName }</div><div className="preview">{ law.LawArticles[0].ArticleContent }</div></a> ) }<Back href="/" b={ true }/></>
     ) ; 
 }
 
