@@ -13,12 +13,12 @@ function PartyDetail()
             <h1>{ p.PartyName }</h1>
             <div id="pd">
                 <div className="pl">
-                    <img src={ "i/parties/" + p.Logo[0] } alt={ p.PartyName + " 標章" } />
+                    <img src={ "https://tcfshsu.github.io/law/i/parties/" + p.Logo[0] } alt={ p.PartyName + " 標章" } />
                     {
                         (p.Logo.length == 2) ? 
                         <>
-                            <audio className="printNoDisplay" controls src={ "a/parties/" + p.Logo[1] }></audio>
-                            <a className="onlyPrint" href={ "a/parties/" + p.Logo[1] }>https://tcfshsu.github.io/law/a/parties/{ p.Logo[1] }</a>
+                            <audio className="printNoDisplay" controls src={ "https://tcfshsu.github.io/law/a/parties/" + p.Logo[1] }></audio>
+                            <a className="onlyPrint" href={ "https://tcfshsu.github.io/law/a/parties/" + p.Logo[1] }>https://tcfshsu.github.io/law/a/parties/{ p.Logo[1] }</a>
                         </>
                         : <></>
                     }
