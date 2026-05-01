@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 // import parties from "./json/parties.json"; 
 import Back from "./Back";
-const parties = await fetch( "https://tcfshsu.github.io/law/json/parties.json" ).json() ; 
+const res = await fetch( "https://tcfshsu.github.io/law/json/parties.json" ) ; 
+const parties = await res.json() ; 
 
 function PartyDetail() 
 {
